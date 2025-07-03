@@ -1,0 +1,1 @@
+A collection of small Python scripts created for various personal uses. By the time you see this, the scripts should be commented with their purposes.
