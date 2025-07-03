@@ -1,3 +1,4 @@
+# Created 2020-07-03
 # Script for a text-based roleplaying game system titled RPG Dungeon.
 # The character in question, Lucina, has a number of chance-based effects on her attacks. Some come from her held items, while others are innate to her character.
 # This script will, for an individual series of attacks, determine which of these effects trigger and on which attacks.
