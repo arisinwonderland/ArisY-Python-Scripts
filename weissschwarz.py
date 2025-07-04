@@ -35,7 +35,7 @@ for file in files:
                     for line in f:
                         m = re.match(r"Trait\d (.+)", line) # Regex matching lines with the "Trait" prefix. Cards can have up to three traits, so no quantifier for more digits is needed.
                         if m:
-                            val = m.group(1).replace('"','""') # None of the test data I used had quotes in the trait names, but it's best to be sure.
+                            val = m.group(1).strip().replace('"','""') # None of the test data I used had quotes in the trait names, but it's best to be sure.
                             if re.search(",", val): # For neatness's sake, I've only put quotations around traits that actually have commas.
                                 val = '"' + val + '"'
                             sets[file][1].add(val)
